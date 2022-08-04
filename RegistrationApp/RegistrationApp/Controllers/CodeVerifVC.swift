@@ -1,23 +1,20 @@
 //
-//  SignInVC.swift
+//  CodeVerifVC.swift
 //  RegistrationApp
 //
-//  Created by Martynov Evgeny on 28.07.22.
+//  Created by Martynov Evgeny on 1.08.22.
 //
 
 import UIKit
 
-class SignInVC: UIViewController {
+class CodeVerifVC: UIViewController {
+    
+    var userModel: UserModel?
 
-    @IBOutlet weak var emailTF: UITextField!
-    @IBOutlet weak var passTF: UITextField!
-    
-    @IBOutlet weak var errorEmailLbl: UILabel!
-    @IBOutlet weak var errorPass: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(userModel)
         // Do any additional setup after loading the view.
     }
     

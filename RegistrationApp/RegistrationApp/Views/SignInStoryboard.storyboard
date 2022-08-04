@@ -26,6 +26,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Create new account">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="GgC-4w-cor" kind="show" id="STE-hz-ntI"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="iFf-sp-hs1">
                                 <rect key="frame" x="25" y="311" width="364" height="328"/>
@@ -117,6 +120,16 @@
             </objects>
             <point key="canvasLocation" x="501" y="78"/>
         </scene>
+        <!--SignUpStoryboard-->
+        <scene sceneID="aOa-RD-mcK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUpStoryboard" id="GgC-4w-cor" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="24V-MH-jin"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvD-ix-7ie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167" y="-52"/>
+        </scene>
         <!--Main-->
         <scene sceneID="J0f-xo-IZ4">
             <objects>
@@ -125,7 +138,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4Q-dE-psL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1237" y="202"/>
+            <point key="canvasLocation" x="1107" y="162"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GeO-VY-gCz">
