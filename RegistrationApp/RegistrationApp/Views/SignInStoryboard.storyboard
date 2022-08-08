@@ -26,6 +26,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Create new account">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="GgC-4w-cor" kind="show" id="STE-hz-ntI"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="iFf-sp-hs1">
                                 <rect key="frame" x="25" y="311" width="364" height="328"/>
@@ -71,7 +74,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Kl-Km-DSp">
                                         <rect key="frame" x="0.0" y="278" width="364" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8i6-IE-4TK">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8i6-IE-4TK">
                                                 <rect key="frame" x="107" y="0.0" width="150" height="50"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -86,7 +89,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="iPp-5w-t0p" kind="show" id="7Vd-Gx-kzi"/>
+                                                    <action selector="signInAction" destination="wSb-2x-jJE" eventType="touchUpInside" id="26H-vc-fkw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -111,11 +114,22 @@
                         <outlet property="errorEmailLbl" destination="5ko-Jm-yf4" id="1am-Yt-Knl"/>
                         <outlet property="errorPass" destination="xiL-yQ-iUL" id="glC-1S-SVs"/>
                         <outlet property="passTF" destination="eZ7-qR-gBU" id="Ofa-Yt-AyT"/>
+                        <segue destination="iPp-5w-t0p" kind="show" identifier="goToMain" id="Rv7-3e-ere"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9mu-NR-YMQ" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="501" y="78"/>
+        </scene>
+        <!--SignUpStoryboard-->
+        <scene sceneID="aOa-RD-mcK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUpStoryboard" id="GgC-4w-cor" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="24V-MH-jin"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvD-ix-7ie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167" y="-52"/>
         </scene>
         <!--Main-->
         <scene sceneID="J0f-xo-IZ4">
@@ -125,7 +139,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4Q-dE-psL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1237" y="202"/>
+            <point key="canvasLocation" x="1107" y="162"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GeO-VY-gCz">

@@ -14,6 +14,17 @@
 		2D214F4928930BB2002752C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214F4728930BB2002752C7 /* LaunchScreen.storyboard */; };
 		2D214F512893129F002752C7 /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214F502893129F002752C7 /* SignInStoryboard.storyboard */; };
 		2D214F5728931419002752C7 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D214F5628931419002752C7 /* SignInVC.swift */; };
+		2D55BD06289836EF00FD59AF /* SignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D55BD05289836EF00FD59AF /* SignUpStoryboard.storyboard */; };
+		2D55BD0828983F7F00FD59AF /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55BD0728983F7F00FD59AF /* SignUpVC.swift */; };
+		2D55BD0B2898452F00FD59AF /* VerificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55BD0A2898452F00FD59AF /* VerificationService.swift */; };
+		2D55BD0E2898485E00FD59AF /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55BD0D2898485E00FD59AF /* UIViewControllerExt.swift */; };
+		2D55BD11289857CC00FD59AF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55BD10289857CC00FD59AF /* UserModel.swift */; };
+		2D55BD132898596900FD59AF /* CodeVerifVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55BD122898596900FD59AF /* CodeVerifVC.swift */; };
+		2DC3C3F028980A870033CB58 /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC3C3EF28980A870033CB58 /* File.rtf */; };
+		2DFD6C11289C386D00542BC2 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD6C10289C386D00542BC2 /* WelcomeVC.swift */; };
+		2DFD6C13289C3DA700542BC2 /* UserDafaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD6C12289C3DA700542BC2 /* UserDafaultsService.swift */; };
+		2DFD6C15289C3E1300542BC2 /* UserDefaultsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD6C14289C3E1300542BC2 /* UserDefaultsExt.swift */; };
+		2DFD6C17289C4AF400542BC2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD6C16289C4AF400542BC2 /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,17 @@
 		2D214F4A28930BB2002752C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D214F502893129F002752C7 /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
 		2D214F5628931419002752C7 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		2D55BD05289836EF00FD59AF /* SignUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryboard.storyboard; sourceTree = "<group>"; };
+		2D55BD0728983F7F00FD59AF /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		2D55BD0A2898452F00FD59AF /* VerificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationService.swift; sourceTree = "<group>"; };
+		2D55BD0D2898485E00FD59AF /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		2D55BD10289857CC00FD59AF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2D55BD122898596900FD59AF /* CodeVerifVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerifVC.swift; sourceTree = "<group>"; };
+		2DC3C3EF28980A870033CB58 /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
+		2DFD6C10289C386D00542BC2 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		2DFD6C12289C3DA700542BC2 /* UserDafaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDafaultsService.swift; sourceTree = "<group>"; };
+		2DFD6C14289C3E1300542BC2 /* UserDefaultsExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExt.swift; sourceTree = "<group>"; };
+		2DFD6C16289C4AF400542BC2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +80,13 @@
 		2D214F3B28930BB1002752C7 /* RegistrationApp */ = {
 			isa = PBXGroup;
 			children = (
+				2D55BD0F289857B600FD59AF /* Models */,
+				2D55BD092898450C00FD59AF /* Services */,
 				2D214F54289313F8002752C7 /* Controllers */,
+				2D55BD0C2898483E00FD59AF /* Extensions */,
 				2D214F52289313A8002752C7 /* Views */,
 				2D214F4528930BB2002752C7 /* Assets.xcassets */,
+				2DC3C3EF28980A870033CB58 /* File.rtf */,
 				2D214F53289313BB002752C7 /* Delagates */,
 				2D214F4A28930BB2002752C7 /* Info.plist */,
 			);
@@ -70,8 +96,9 @@
 		2D214F52289313A8002752C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2D214F4228930BB1002752C7 /* Main.storyboard */,
 				2D214F502893129F002752C7 /* SignInStoryboard.storyboard */,
+				2D55BD05289836EF00FD59AF /* SignUpStoryboard.storyboard */,
+				2D214F4228930BB1002752C7 /* Main.storyboard */,
 				2D214F4728930BB2002752C7 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -90,8 +117,38 @@
 			isa = PBXGroup;
 			children = (
 				2D214F5628931419002752C7 /* SignInVC.swift */,
+				2D55BD0728983F7F00FD59AF /* SignUpVC.swift */,
+				2D55BD122898596900FD59AF /* CodeVerifVC.swift */,
+				2DFD6C10289C386D00542BC2 /* WelcomeVC.swift */,
+				2DFD6C16289C4AF400542BC2 /* ProfileVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D55BD092898450C00FD59AF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D55BD0A2898452F00FD59AF /* VerificationService.swift */,
+				2DFD6C12289C3DA700542BC2 /* UserDafaultsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2D55BD0C2898483E00FD59AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D55BD0D2898485E00FD59AF /* UIViewControllerExt.swift */,
+				2DFD6C14289C3E1300542BC2 /* UserDefaultsExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D55BD0F289857B600FD59AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D55BD10289857CC00FD59AF /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +209,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC3C3F028980A870033CB58 /* File.rtf in Resources */,
+				2D55BD06289836EF00FD59AF /* SignUpStoryboard.storyboard in Resources */,
 				2D214F4928930BB2002752C7 /* LaunchScreen.storyboard in Resources */,
 				2D214F4628930BB2002752C7 /* Assets.xcassets in Resources */,
 				2D214F4428930BB1002752C7 /* Main.storyboard in Resources */,
@@ -166,8 +225,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFD6C17289C4AF400542BC2 /* ProfileVC.swift in Sources */,
+				2D55BD0828983F7F00FD59AF /* SignUpVC.swift in Sources */,
+				2D55BD11289857CC00FD59AF /* UserModel.swift in Sources */,
+				2D55BD0B2898452F00FD59AF /* VerificationService.swift in Sources */,
+				2D55BD0E2898485E00FD59AF /* UIViewControllerExt.swift in Sources */,
+				2DFD6C15289C3E1300542BC2 /* UserDefaultsExt.swift in Sources */,
+				2D55BD132898596900FD59AF /* CodeVerifVC.swift in Sources */,
 				2D214F3D28930BB1002752C7 /* AppDelegate.swift in Sources */,
+				2DFD6C11289C386D00542BC2 /* WelcomeVC.swift in Sources */,
 				2D214F3F28930BB1002752C7 /* SceneDelegate.swift in Sources */,
+				2DFD6C13289C3DA700542BC2 /* UserDafaultsService.swift in Sources */,
 				2D214F5728931419002752C7 /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
