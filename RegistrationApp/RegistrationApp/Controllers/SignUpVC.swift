@@ -26,6 +26,8 @@ final class SignUpVC: UIViewController {
     @IBOutlet private weak var errorConfPassLbl: UILabel!
     /// continueBtn
     @IBOutlet private weak var continueBtn: UIButton!
+    /// scrollView
+    @IBOutlet private weak var scrollView: UIScrollView!
     
     // MARK: - Properties
     
@@ -38,6 +40,7 @@ final class SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        startKeyboardObserver()
     }
     
     // MARK: - Func-s
@@ -102,6 +105,30 @@ final class SignUpVC: UIViewController {
     
     private func updateContinueBtnState() {
         continueBtn.isEnabled = isValidEmail && isConfPass && passwordStrength != .veryWeak
+    }
+    
+    /// Keyboard Observer-s
+    
+    private func startKeyboardObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc private func keyboardWillShow(notification: Notification) {
+        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+        let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: keyboardSize.height, right: 0.0)
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
+    }
+    
+    @objc private func keyboardWillHide() {
+        let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
     }
     
     // MARK: - Navigation

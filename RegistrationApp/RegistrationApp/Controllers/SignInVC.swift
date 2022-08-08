@@ -17,10 +17,24 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        isLoggedUser()
     }
     
+    @IBAction func signInAction() {
+        if let email = emailTF.text,
+           let pass = passTF.text,
+           let userModel = UserDafaultsService.getUserModel(),
+           email == userModel.email,
+           pass == userModel.pass {
+            performSegue(withIdentifier: "goToMain", sender: nil)
+        }
+    }
+    
+    private func isLoggedUser() {
+        if let _ = UserDafaultsService.getUserModel() {
+            performSegue(withIdentifier: "goToMain", sender: nil)
+        }
+    }
 
     /*
     // MARK: - Navigation
